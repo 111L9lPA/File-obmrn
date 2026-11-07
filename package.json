@@ -1,0 +1,1 @@
+{"name":"tolik-cnc-library","private":true,"type":"module","scripts":{"test":"node --test tests/core.test.js","build":"python tools/package_site.py"}}

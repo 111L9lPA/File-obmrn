@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "updatedAt": "2026-11-07",
+  "repository": "111L9lPA/File-obmrn",
+  "projects": [
+    {
+      "id": "panels",
+      "title": "Панель и полоса",
+      "subtitle": "2 детали из комплекта · лист 1220 × 2440",
+      "stock": [
+        1220,
+        2440,
+        22
+      ],
+      "material": "Материал как у бобышек, 22 мм",
+      "parts": [
+        {
+          "size": [
+            1150,
+            2150
+          ],
+          "count": 1
+        },
+        {
+          "size": [
+            1150,
+            200
+          ],
+          "count": 1
+        }
+      ],
+      "description": "На других листах остаются 2110 × 200 — 2 шт. и 1150 × 200 — 1 шт. Отступы 35 мм по бокам, 40 мм на концах.",
+      "color": "green",
+      "zero": "XY — нижний левый угол листа; Z — верх материала",
+      "operations": [
+        {
+          "id": "40_TOP_SCREW_MARKS_D4_Z4_v1",
+          "title": "Отметки под саморезы сверху",
+          "filename": "40_TOP_SCREW_MARKS_D4_Z4_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/40_TOP_SCREW_MARKS_D4_Z4_v1.nc",
+          "sha256": "5d92e72bb7ea0785402b4f6f3939a29e5a698175f45fb434b714ef2cdc13ac4e",
+          "bytes": 48453,
+          "tool": "D4 · кукуруза",
+          "depth": 4,
+          "order": 1,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            800.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Три углубления примерно Ø6: X60 / 610 / 1160, Y2420. Шпиндель остановить до установки саморезов.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "42_EXTRA_MARKS_LEFT_RIGHT_BOTTOM_D4_Z4_v1",
+          "title": "Отметки слева, справа и снизу",
+          "filename": "42_EXTRA_MARKS_LEFT_RIGHT_BOTTOM_D4_Z4_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/42_EXTRA_MARKS_LEFT_RIGHT_BOTTOM_D4_Z4_v1.nc",
+          "sha256": "0096092c33ca5dfd3b4c124b7dddbbead46f5967eaa96b2b42b0324faffc4442",
+          "bytes": 47638,
+          "tool": "D4 · кукуруза",
+          "depth": 4,
+          "order": 2,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            800.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Дополнительные точки X12 Y1220; X1208 Y1220; X610 Y20. Верхние точки не повторяет.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "41_PANEL_AND_STRIP_D4_Z22p7_v1",
+          "title": "Вырезать полосу и большую панель",
+          "filename": "41_PANEL_AND_STRIP_D4_Z22p7_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/41_PANEL_AND_STRIP_D4_Z22p7_v1.nc",
+          "sha256": "0d3fec1abe9a516635075f15a737cc8369221110e212a357dff5e52d9f901dc0",
+          "bytes": 8928,
+          "tool": "D4 · кукуруза",
+          "depth": 22.7,
+          "order": 3,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            2000.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Сначала полоса, потом панель. Нужны закрепление, вакуум и проверка нулей. Головки с шайбами — в радиусе до 10 мм от отметок.",
+          "requires": [
+            "40_TOP_SCREW_MARKS_D4_Z4_v1",
+            "42_EXTRA_MARKS_LEFT_RIGHT_BOTTOM_D4_Z4_v1"
+          ],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        }
+      ],
+      "images": [
+        {
+          "url": "assets/43_LAYOUT_PANEL_AND_STRIP.png",
+          "title": "Что помещается на лист и что остаётся",
+          "sha256": "1aef7111d2d43f4339979660e50d4e7196560586a50cef36a397aaf423b14bbf"
+        },
+        {
+          "url": "assets/44_TWO_LONG_STRIPS_STOCK_450x2160.png",
+          "title": "Кусок для двух оставшихся длинных полос — не траектория файла 41",
+          "sha256": "ff97eec28f81e24014a9b0ab282bbd1fcb7af844d957cfdc44cba9dd6464da77"
+        }
+      ]
+    },
+    {
+      "id": "bubishki",
+      "title": "Бобышки",
+      "subtitle": "Малые детали · актуальная раскладка 22 + 16",
+      "stock": [
+        650,
+        1125,
+        22
+      ],
+      "material": "Материал 22 мм, точный тип не подтверждён",
+      "parts": [
+        {
+          "size": [
+            47.001,
+            23.8
+          ],
+          "count": 22
+        },
+        {
+          "size": [
+            63.8,
+            27.001
+          ],
+          "count": 16
+        }
+      ],
+      "description": "По два ряда каждого размера. Между пропилами остаётся 2 мм. Один экземпляр предыдущей v2 отработал нормально со слов Толика; новая раскладка этим не подтверждена.",
+      "color": "blue",
+      "zero": "XY — нижний левый угол листа; Z — верх материала",
+      "operations": [
+        {
+          "id": "32_BUBISHKI_22small_16long_D4_WEB2_650x1125_v3",
+          "title": "22 малых и 16 длинных бобышек",
+          "filename": "32_BUBISHKI_22small_16long_D4_WEB2_650x1125_v3.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/32_BUBISHKI_22small_16long_D4_WEB2_650x1125_v3.nc",
+          "sha256": "726532e50f5acaa6183f1c51b5394d114e9224fdeba1a8c790d245ca4e78a96f",
+          "bytes": 97134,
+          "tool": "D4 · кукуруза",
+          "depth": 22.5,
+          "order": 1,
+          "version": "v3",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            2000.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Лист 650 × 1125. Отступ от готовых деталей не меньше 16 мм. Между готовыми деталями 10 мм, остаток между пропилами 2 мм.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "31_BUBISHKI_20plus20_D4_GAP22_Z22p5_v2",
+          "title": "Прежняя раскладка: 20 + 20",
+          "filename": "31_BUBISHKI_20plus20_D4_GAP22_Z22p5_v2.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/31_BUBISHKI_20plus20_D4_GAP22_Z22p5_v2.nc",
+          "sha256": "a2d1cc34923f3ee6db011b2949d0d55d720529212b3b7358cf964a0aaa02efab",
+          "bytes": 103195,
+          "tool": "D4 · кукуруза",
+          "depth": 22.5,
+          "order": 1,
+          "version": "v2",
+          "archived": true,
+          "feeds": [
+            1800.0,
+            2000.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "partial_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Старый лист 670 × 1110; промежуток 22 мм. Подтверждена только первая деталь, не весь файл.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "30_BUBISHKI_8small_2long_D4_Z22p5_v1",
+          "title": "Первая раскладка: 8 + 2",
+          "filename": "30_BUBISHKI_8small_2long_D4_Z22p5_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/30_BUBISHKI_8small_2long_D4_Z22p5_v1.nc",
+          "sha256": "966821153ed0b1baac2ab9f68fd5dd7b7f44fe8f15cb59b3da41eacbb9fe2cbf",
+          "bytes": 53341,
+          "tool": "D4 · кукуруза",
+          "depth": 22.5,
+          "order": 1,
+          "version": "v1",
+          "archived": true,
+          "feeds": [
+            1800.0,
+            2000.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Старая раскладка и боковые входы. Лист 670 × 1110.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        }
+      ],
+      "images": [
+        {
+          "url": "assets/bubishki.svg",
+          "title": "Текущая раскладка v3 — схема нижнего участка листа",
+          "sha256": "4625c9ae95349b36290e88c7d98e8553625430c09148f5f83feff57d3af0101f"
+        }
+      ]
+    },
+    {
+      "id": "tabletop",
+      "title": "Столешница под акрил",
+      "subtitle": "903 × 1703 · выборка 803 × 1603",
+      "stock": [
+        1220,
+        2440,
+        22
+      ],
+      "material": "Фанера",
+      "parts": [
+        {
+          "size": [
+            903,
+            1703
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Актуальные размеры из поздней версии проекта: 903 × 1703, выборка 803 × 1603 глубиной 11, углы снаружи R10. Старые 902 × 1702 не подставлять.",
+      "color": "sand",
+      "zero": "XY — нижний левый угол листа; Z — верх материала",
+      "operations": [
+        {
+          "id": "10_BIG_D4_SCORE_IN_OUT_Z3_v1",
+          "title": "Предварительно надрезать контуры",
+          "filename": "10_BIG_D4_SCORE_IN_OUT_Z3_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/10_BIG_D4_SCORE_IN_OUT_Z3_v1.nc",
+          "sha256": "2cd3ae9986a10d8a31648b3bf7fd275ee9adc16ff6e64b1267d9de49a0f9a7e9",
+          "bytes": 16769,
+          "tool": "D4 · кукуруза",
+          "depth": 3,
+          "order": 1,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "11_BIG_D32_POCKET_803x1603_Z11_v1",
+          "title": "Выбрать середину",
+          "filename": "11_BIG_D32_POCKET_803x1603_Z11_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/11_BIG_D32_POCKET_803x1603_Z11_v1.nc",
+          "sha256": "58a2e4679efbaa4c347662fa176a4a299a612df3903fcf252d7e4ff53e976041",
+          "bytes": 32559,
+          "tool": "D32 · выборочная",
+          "depth": 11,
+          "order": 2,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            800.0,
+            1500.0,
+            4500.0
+          ],
+          "rpm": [
+            12000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "После выполнения измерить глубину в нескольких местах. Не обнулять Z на дне.",
+          "requires": [
+            "10_BIG_D4_SCORE_IN_OUT_Z3_v1"
+          ],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "12_BIG_D4_CORNERS_WALLS_Z11_v2",
+          "title": "Дочистить углы и стенки",
+          "filename": "12_BIG_D4_CORNERS_WALLS_Z11_v2.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/12_BIG_D4_CORNERS_WALLS_Z11_v2.nc",
+          "sha256": "86202208a42b348a89694afe267c26b6c6e395ddd152d46031dcb14cff5c765e",
+          "bytes": 11545,
+          "tool": "D4 · кукуруза",
+          "depth": 11,
+          "order": 3,
+          "version": "v2",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            2000.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Только после выборки D32 и замера. Заменяет файл 12 v1; не запускать обе версии.",
+          "requires": [
+            "11_BIG_D32_POCKET_803x1603_Z11_v1"
+          ],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "13_BIG_D4_OUTER_903x1703_R10_Z22p5_v1",
+          "title": "Отделить столешницу по контуру",
+          "filename": "13_BIG_D4_OUTER_903x1703_R10_Z22p5_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/13_BIG_D4_OUTER_903x1703_R10_Z22p5_v1.nc",
+          "sha256": "40728ed32d5bd68df382abca7d2beda52b5719316c66c1e9416e4478e99c8c95",
+          "bytes": 97571,
+          "tool": "D4 · кукуруза",
+          "depth": 22.5,
+          "order": 4,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "",
+          "requires": [
+            "12_BIG_D4_CORNERS_WALLS_Z11_v2"
+          ],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "12_BIG_D4_CORNERS_WALLS_Z11_v1",
+          "title": "Дочистка углов — старая версия",
+          "filename": "12_BIG_D4_CORNERS_WALLS_Z11_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/12_BIG_D4_CORNERS_WALLS_Z11_v1.nc",
+          "sha256": "7b1a64d8ebdcbdb1dbd3771b75fb32f84b210e0e1544a8f296648adba894b4fd",
+          "bytes": 101069,
+          "tool": "D4 · кукуруза",
+          "depth": 11,
+          "order": 3,
+          "version": "v1",
+          "archived": true,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "geometry_checked",
+          "note": "Заменён на v2. Не запускать обе версии подряд.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        }
+      ],
+      "images": [
+        {
+          "url": "assets/TABLETOP_903x1703_v1.png",
+          "title": "Схема комплекта столешницы v1; файл 12 заменён на v2 без смены размеров",
+          "sha256": "33ba7be745890ccb10637df6893e3d68d641344d47d54eed9328d5e2e569d0c5"
+        }
+      ]
+    },
+    {
+      "id": "dobory",
+      "title": "Доборы 475 мм",
+      "subtitle": "5 полос · лист вдоль Y",
+      "stock": [
+        1250,
+        2500,
+        6
+      ],
+      "material": "Листовой материал 6 мм",
+      "parts": [
+        {
+          "size": [
+            1250,
+            475
+          ],
+          "count": 5
+        }
+      ],
+      "description": "Актуальная ширина 475 мм. Сначала оба прохода одной линии, затем следующая. Торцы длиной 1250 определяются исходным листом.",
+      "color": "blue",
+      "zero": "XY — нижний левый угол листа; Z — верх материала",
+      "operations": [
+        {
+          "id": "20_DOBORY_475x1250_D3p9_2PASS_v3",
+          "title": "Пять доборов шириной 475 мм",
+          "filename": "20_DOBORY_475x1250_D3p9_2PASS_v3.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/20_DOBORY_475x1250_D3p9_2PASS_v3.nc",
+          "sha256": "50232636c61ad3c51e65ac766c767ffc921be751317c80960b16ead1d8169854",
+          "bytes": 2730,
+          "tool": "D3,9",
+          "depth": 6.5,
+          "order": 1,
+          "version": "v3",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "not_reviewed",
+          "note": "",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "20_DOBORY_X1250_Y2500_D3p9_2PASS_v2",
+          "title": "Прежняя ширина 450 мм",
+          "filename": "20_DOBORY_X1250_Y2500_D3p9_2PASS_v2.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/20_DOBORY_X1250_Y2500_D3p9_2PASS_v2.nc",
+          "sha256": "c1f5b746b918266abb22c8957587e01b26b43fc600ec6ed95f38b5e0002ae946",
+          "bytes": 2726,
+          "tool": "D3,9",
+          "depth": 6.5,
+          "order": 1,
+          "version": "v2",
+          "archived": true,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "not_reviewed",
+          "note": "Ширина 450 устарела. Геометрия и ориентация листа могли отличаться.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "20_DOBORY_5x450x1250_D3p9_Z6p5_v1",
+          "title": "Прежняя ширина 450 мм",
+          "filename": "20_DOBORY_5x450x1250_D3p9_Z6p5_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/20_DOBORY_5x450x1250_D3p9_Z6p5_v1.nc",
+          "sha256": "be5c1fe98af3a9923290b5441164e27357e78735f705572e3d3129cd087526e0",
+          "bytes": 2998,
+          "tool": "D3,9",
+          "depth": 6.5,
+          "order": 1,
+          "version": "v1",
+          "archived": true,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "not_reviewed",
+          "note": "Ширина 450 устарела. Геометрия и ориентация листа могли отличаться.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        }
+      ],
+      "images": [
+        {
+          "url": "assets/20_DOBORY_475x1250_LAYOUT_v3.png",
+          "title": "Раскладка доборов шириной 475 мм — версия v3",
+          "sha256": "6916df516493ada7a5c675ba6fc8023d83d5919abd26ba42d6c8b1c5780fa183"
+        }
+      ]
+    },
+    {
+      "id": "tests",
+      "title": "Пробы и тесты",
+      "subtitle": "Маленькая выборка и пробный квадрат",
+      "stock": null,
+      "material": "Разные заготовки",
+      "parts": [],
+      "description": "Архив отдельных проб. Это не последовательность запуска. Успех пробы не подтверждает новые большие программы.",
+      "color": "sand",
+      "zero": "Проверить в описании конкретного файла; общий ноль для всех проб не задан",
+      "operations": [
+        {
+          "id": "KVADRAT_TEST",
+          "title": "Пробный квадрат 50 × 50",
+          "filename": "KVADRAT_TEST.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/KVADRAT_TEST.nc",
+          "sha256": "7e80461f4ca1a3d615622e54a1a9fcb5ebac31f5e987e54376b74b446d18ca99",
+          "bytes": 815,
+          "tool": "D4 · кукуруза",
+          "depth": 0.5,
+          "order": 1,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            800.0,
+            1500.0
+          ],
+          "rpm": [
+            18000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "not_reviewed",
+          "note": "Отдельная проба. Проверь описание внутри NC и свободную зону.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "02_TEST_POCKET_200x100_D32_Z11_v1",
+          "title": "Маленькая выборка D32",
+          "filename": "02_TEST_POCKET_200x100_D32_Z11_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/02_TEST_POCKET_200x100_D32_Z11_v1.nc",
+          "sha256": "36eaee9ccc00c3c6fe704aa64eecbc7a084a4674877f77d3871943147983082f",
+          "bytes": 3945,
+          "tool": "D32 · выборочная",
+          "depth": 11,
+          "order": 2,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            800.0,
+            1500.0,
+            4500.0
+          ],
+          "rpm": [
+            12000.0
+          ],
+          "cutStatus": "partial_reported",
+          "checkStatus": "not_reviewed",
+          "note": "Толик сообщил об удачной пробе. Точная связь запуска с байтами файла не подтверждена.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        },
+        {
+          "id": "03_TEST_POCKET_200x100_D4_Z11_v1",
+          "title": "Дочистка маленькой выборки D4",
+          "filename": "03_TEST_POCKET_200x100_D4_Z11_v1.nc",
+          "url": "https://raw.githubusercontent.com/111L9lPA/File-obmrn/d53e2617f09befb79277e2f804f287dda3a3c7f9/03_TEST_POCKET_200x100_D4_Z11_v1.nc",
+          "sha256": "efeaddb57c82b1c703d50695c9b6321f7460d5487f5d5a404bbd784966f61a59",
+          "bytes": 34001,
+          "tool": "D4 · кукуруза",
+          "depth": 11,
+          "order": 3,
+          "version": "v1",
+          "archived": false,
+          "feeds": [
+            1800.0,
+            4000.0
+          ],
+          "rpm": [
+            15000.0
+          ],
+          "cutStatus": "not_reported",
+          "checkStatus": "not_reviewed",
+          "note": "Только внутри уже выбранной середины. НЕ программа надреза цельной фанеры.",
+          "requires": [],
+          "source": "Файл репозитория и переписка с Толиком",
+          "revision": "d53e2617f09befb79277e2f804f287dda3a3c7f9"
+        }
+      ],
+      "images": [],
+      "sequence": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+node_modules/
+tests/portable-test.html
+__pycache__/
+*.log
