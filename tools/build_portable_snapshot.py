@@ -13,7 +13,7 @@ for p in cat['projects']:
 backup={'format':'cnc-library-backup-v1','exportedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'catalog':cat,'records':list(records.items())}
 def safe(obj):return json.dumps(obj,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
 boot='<script>window.PORTABLE_DATA='+safe(backup)+';window.PORTABLE_TEMPLATE='+safe(template)+';</script>'
-html=template['html'].replace('<!--PORTABLE_BOOT-->',boot)
+html=template['html'].replace('<!--PORTABLE_BOOT-->',boot,1)
 out=root/'CNC_LIBRARY_OFFLINE.html';out.write_text(html)
 Path('/workspace/shared/downloads/CNC_LIBRARY_OFFLINE.html').write_text(html)
 print('Clean portable snapshot:',out.stat().st_size,'bytes;',len(records),'verified assets; no test reports')
